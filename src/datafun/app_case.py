@@ -53,67 +53,6 @@ import seaborn as sns
 
 LOG: logging.Logger = get_logger("EDA", level="DEBUG")
 
-import pandas as pd
-
-# Website visitor/user estimates (approximate values in millions)
-data = {
-    "Year": [2000, 2005, 2010, 2015, 2020, 2023, 2024, 2025],
-
-    "Google_Users_Millions": [
-        361,
-        1000,
-        1200,
-        2500,
-        4000,
-        4500,
-        5000,
-        5600
-    ],
-
-    "ChatGPT_Users_Millions": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        100,
-        400,
-        800
-    ],
-
-    "AI_Tool_Users_Millions": [
-        0,
-        0,
-        10,
-        50,
-        100,
-        300,
-        800,
-        1800
-    ],
-
-    "YouTube_Users_Millions": [
-        0,
-        8,
-        490,
-        1300,
-        2000,
-        2500,
-        2700,
-        2900
-    ]
-}
-
-# Create DataFrame
-df = pd.DataFrame(data)
-
-# Print table
-print(df)
-
-# Save to CSV
-df.to_csv("website_visitors_2000_2025.csv", index=False)
-
-print("\nCSV file saved successfully!")
 # === Section 1c. Global Constants and Configuration ===
 
 # CUSTOM: These are dataset-specific constants
